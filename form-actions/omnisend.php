@@ -97,7 +97,8 @@ class Omnisend_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\A
 	                    'type' => 'email',
 	                    'channels' => [
 	                        'email' => [
-	                            'status' => 'subscribed'
+	                            'status' => 'subscribed',
+				    'statusDate' => gmdate('Y-m-d\TH:i:s\Z')
 	                        ]
 	                    ],
 	                    'id' => $email,
